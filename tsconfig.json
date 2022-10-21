@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "lib": [
+      "ES2021"
+    ],
+    "module": "commonjs",
+    "target": "ES2021",
+    "resolveJsonModule": true, // json imports
+    "esModuleInterop": true, // import common modules as ES6 Modules
+    "allowSyntheticDefaultImports": true, // support typesystem compatibility
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    // "skipLibCheck": true, // Remove once https://github.com/kubernetes-client/javascript/issues/864 is resolved.
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./tests/",
+    "./node_modules/",
+    "./lib/"
+  ]
+}
